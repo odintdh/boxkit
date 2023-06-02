@@ -23,8 +23,6 @@ RUN chmod +x /tmp/scripts/pre.sh && \
         /tmp/scripts/post.sh 
         
 RUN rm /extra-packages
-RUN   ln -fs /usr/bin/distrobox-host-exec /usr/local/bin/flatpak && \ 
-      ln -fs /usr/bin/distrobox-host-exec /usr/local/bin/podman && \
-      ln -fs /usr/bin/distrobox-host-exec /usr/local/bin/docker && \
+RUN ln -fs /usr/bin/distrobox-host-exec /usr/local/bin/flatpak && \ 
       ln -fs /usr/bin/distrobox-host-exec /usr/local/bin/rpm-ostree
      
