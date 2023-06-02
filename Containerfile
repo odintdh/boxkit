@@ -23,5 +23,4 @@ RUN chmod +x /tmp/scripts/pre.sh && \
         /tmp/scripts/post.sh 
         
 RUN rm /extra-packages
-RUN   ln -fs /bin/sh /usr/bin/sh 
      
