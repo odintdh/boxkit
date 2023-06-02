@@ -15,7 +15,6 @@ helix
 just
 make
 micro
-ncdu
 ncurses
 npm
 plocate
