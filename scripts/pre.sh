@@ -11,6 +11,6 @@ rpm --import https://packages.microsoft.com/keys/microsoft.asc
 dnf install -y https://packages.microsoft.com/config/rhel/8/packages-microsoft-prod.rpm
 dnf install -y dnf-plugins-core
 dnf config-manager --add-repo https://rpm.releases.hashicorp.com/fedora/hashicorp.repo
-dnf copr enable phracek/PyCharm
+#dnf copr enable phracek/PyCharm
 dnf update
 dnf upgrade
