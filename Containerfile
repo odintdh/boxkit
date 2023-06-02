@@ -18,9 +18,10 @@ COPY --from=cgr.dev/chainguard/minio-client:latest /usr/bin/mc /usr/bin/mc
 COPY extra-packages /
 RUN chmod +x /tmp/scripts/pre.sh && \
         /tmp/scripts/pre.sh && \
+        grep -v '^#' /extra-packages | xargs dnf install -y && \
         chmod +x /tmp/scripts/post.sh && \
-        /tmp/scripts/post.sh && \
-        grep -v '^#' /extra-packages | xargs dnf install -y
+        /tmp/scripts/post.sh 
+        
 RUN rm /extra-packages
 RUN   ln -fs /bin/sh /usr/bin/sh && \
       ln -fs /usr/bin/distrobox-host-exec /usr/local/bin/docker && \
