@@ -29,4 +29,7 @@ install -o root -g root -m 0755 kubectl-argo-rollouts-linux-amd64 /usr/bin/kubec
 echo "Add kind"
 curl -Lo ./kind "https://kind.sigs.k8s.io/dl/v0.17.0/kind-$(uname)-amd64"
 install -o root -g root -m 0755 kind /usr/bin/kind
+echo "Add Terragrunt"
+curl -Lo ./terragrunt_linux_amd64 "https://github.com/gruntwork-io/terragrunt/releases/download/v0.46.2/terragrunt_linux_amd64"
+install -o root -g root -m 0755 terragrunt_linux_amd64 /usr/bin/terragrunt
 rm -rf /tmp/*
