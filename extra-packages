@@ -7,3 +7,4 @@ podman-plugins
 podman-tui
 azure-cli
 mariadb
+postgresql
