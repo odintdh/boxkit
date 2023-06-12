@@ -1,10 +1,6 @@
 code
 python3-pip
 terraform
-podman-compose 
-podman-docker 
-podman-plugins 
-podman-tui
 azure-cli
 mariadb
 postgresql
