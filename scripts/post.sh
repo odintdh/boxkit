@@ -32,4 +32,8 @@ install -o root -g root -m 0755 kind /usr/bin/kind
 echo "Add Terragrunt"
 curl -Lo ./terragrunt_linux_amd64 "https://github.com/gruntwork-io/terragrunt/releases/download/v0.46.2/terragrunt_linux_amd64"
 install -o root -g root -m 0755 terragrunt_linux_amd64 /usr/bin/terragrunt
+echo "Add k9s"
+curl -Lo k9s_Linux_amd64.tar.gz "https://github.com/derailed/k9s/releases/download/v0.27.4/k9s_Linux_amd64.tar.gz"
+tar xvf ./k9s_Linux_amd64.tar.gz
+install -o root -g root -m 0755 k9s /usr/bin/k9s
 rm -rf /tmp/*
