@@ -36,6 +36,6 @@ echo "Add k9s"
 curl -Lo k9s_Linux_amd64.tar.gz "https://github.com/derailed/k9s/releases/download/v0.27.4/k9s_Linux_amd64.tar.gz"
 tar xvf ./k9s_Linux_amd64.tar.gz
 install -o root -g root -m 0755 k9s /usr/bin/k9s
-echo "Install lunarvim"
-LV_BRANCH='release-1.2/neovim-0.8' bash <(curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/master/utils/installer/install.sh)
+#echo "Install lunarvim"
+#LV_BRANCH='release-1.2/neovim-0.8' bash <(curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/master/utils/installer/install.sh)
 rm -rf /tmp/*
