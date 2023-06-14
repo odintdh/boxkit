@@ -4,9 +4,4 @@ terraform
 azure-cli
 mariadb
 postgresql
-neovim
-make
-cargo
-npm
-nodejs
 micro
