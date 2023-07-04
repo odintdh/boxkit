@@ -1,5 +1,6 @@
 ARG FEDORA_MAJOR_VERSION=38
 ARG BASE_IMAGE_URL=registry.fedoraproject.org/fedora-toolbox
+ARG KUBECTL_VERSION=1.25
 
 FROM ${BASE_IMAGE_URL}:${FEDORA_MAJOR_VERSION}
 
@@ -10,7 +11,7 @@ LABEL com.github.containers.toolbox="true" \
 
 COPY scripts /tmp/scripts
 
-COPY --from=cgr.dev/chainguard/kubectl:latest /usr/bin/kubectl /usr/bin/kubectl
+COPY --from=cgr.dev/chainguard/kubectl:${KUBECTL_VERSION} /usr/bin/kubectl /usr/bin/kubectl
 COPY --from=cgr.dev/chainguard/flux:latest /usr/bin/flux /usr/bin/flux
 COPY --from=cgr.dev/chainguard/helm:latest /usr/bin/helm /usr/bin/helm
 COPY --from=cgr.dev/chainguard/ko:latest /usr/bin/ko /usr/bin/ko
