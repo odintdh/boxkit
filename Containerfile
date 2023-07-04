@@ -1,6 +1,6 @@
 ARG FEDORA_MAJOR_VERSION=38
 ARG BASE_IMAGE_URL=registry.fedoraproject.org/fedora-toolbox
-ARG KUBECTL_VERSION=1.25
+
 
 FROM ${BASE_IMAGE_URL}:${FEDORA_MAJOR_VERSION}
 
@@ -8,6 +8,7 @@ LABEL com.github.containers.toolbox="true" \
       usage="This image is meant to be used with the toolbox or distrobox command" \
       summary="A cloud-native terminal experience" \
       maintainer="odintdh@gmail.com"
+ARG KUBECTL_VERSION 1.25
 
 COPY scripts /tmp/scripts
 
