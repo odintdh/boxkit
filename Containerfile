@@ -8,7 +8,7 @@ LABEL com.github.containers.toolbox="true" \
       usage="This image is meant to be used with the toolbox or distrobox command" \
       summary="A cloud-native terminal experience" \
       maintainer="odintdh@gmail.com"
-ARG KUBECTL_VERSION=1.25
+ARG KUBECTL_VERSION=1.26
 
 COPY scripts /tmp/scripts
 
