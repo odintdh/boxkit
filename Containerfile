@@ -13,6 +13,7 @@ ARG KUBECTL_VERSION=1.26
 COPY scripts /tmp/scripts
 
 #COPY --from=cgr.dev/chainguard/kubectl:${KUBECTL_VERSION} /usr/bin/kubectl /usr/bin/kubectl
+# obtiene la ultima version
 COPY --from=cgr.dev/chainguard/kubectl:latest /usr/bin/kubectl /usr/bin/kubectl
 COPY --from=cgr.dev/chainguard/flux:latest /usr/bin/flux /usr/bin/flux
 COPY --from=cgr.dev/chainguard/helm:latest /usr/bin/helm /usr/bin/helm
