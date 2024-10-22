@@ -1,4 +1,4 @@
-ARG FEDORA_MAJOR_VERSION=38
+ARG FEDORA_MAJOR_VERSION=39
 ARG BASE_IMAGE_URL=registry.fedoraproject.org/fedora-toolbox
 
 
