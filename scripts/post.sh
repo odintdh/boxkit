@@ -17,7 +17,7 @@ unzip awscliv2.zip
 #curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
 #install -o root -g root -m 0755 kubectl /usr/bin/kubectl
 echo "Add kubelogin"
-curl -LO "https://github.com/Azure/kubelogin/releases/download/v0.0.29/kubelogin-linux-amd64.zip" -o "kubelogin-linux-amd64.zip"
+curl -LO "https://github.com/Azure/kubelogin/releases/download/v0.0.30/kubelogin-linux-amd64.zip" -o "kubelogin-linux-amd64.zip"
 unzip kubelogin-linux-amd64.zip
 install -o root -g root -m 0755 bin/linux_amd64/kubelogin /usr/bin/kubelogin
 echo "Add argocd-cli"
